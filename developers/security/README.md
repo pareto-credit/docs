@@ -10,6 +10,6 @@ Pareto’s products have undergone multiple audits by both security firms and in
 
 ## Monitoring
 
-Pareto’s protocols are secured by the [Hypernative Platform](https://www.hypernative.io/), which provides real-time monitoring and protection to prevent fund losses. The system detects and mitigates cyberattacks, automatically pausing on-chain smart contracts (see _Pauser_ under [..](../../ "mention")) before any assets are compromised.&#x20;
+Pareto’s protocols are secured by the [Hypernative Platform](https://www.hypernative.io/), which provides real-time monitoring and protection to prevent fund losses. The system detects and mitigates cyberattacks, automatically pausing on-chain smart contracts (see _Pauser_ under [README (1).md](<../../README (1).md> "mention")) before any assets are compromised.&#x20;
 
 Continuous surveillance extends to the front end, smart contract vulnerabilities, private keys, and multi-signature wallets.

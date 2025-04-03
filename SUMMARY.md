@@ -1,8 +1,14 @@
 # Table of contents
 
+## Product
+
+* [Guides](README.md)
+  * [Onboarding](product/guides/onboarding.md)
+  * [Deposit](product/guides/deposit.md)
+
 ## Developers
 
-* [Addresses](README.md)
+* [Addresses](<README (1).md>)
   * [Product](developers/addresses/product.md)
   * [Governance](developers/addresses/governance.md)
 * [Security](developers/security/README.md)
