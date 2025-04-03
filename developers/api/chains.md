@@ -2,7 +2,7 @@
 
 Chains represent the supported blockchain networks that Pareto interacts with. These include the networks where vaults are deployed, where user interactions occur, and where transactions are tracked.
 
-### 🧬 Model Structure
+## Structure
 
 Each chain object includes:
 
@@ -14,4 +14,12 @@ Each chain object includes:
 * `icon` _(string)_ — Optional icon URL
 * `createdAt`, `updatedAt` _(string)_ — ISO timestamps (UTC Unix time)
 
-### 📡 Endpoints
+## Endpoints
+
+{% openapi src="../../.gitbook/assets/Chains.yaml" path="/chains" method="get" %}
+[Chains.yaml](../../.gitbook/assets/Chains.yaml)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/Chains.yaml" path="/chains/{chainId}" method="get" %}
+[Chains.yaml](../../.gitbook/assets/Chains.yaml)
+{% endopenapi %}

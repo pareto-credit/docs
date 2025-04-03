@@ -1,0 +1,67 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Vault Performances
+  version: 1.18.0
+  description: Performance and return metrics tracked per vault over time.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Vault Performances
+    description: Yield and return metrics for vaults across different timeframes
+
+paths:
+  /vault-performances:
+    get:
+      summary: List all vault performance entries
+      tags: [Vault Performances]
+      responses:
+        '200':
+          description: Vault performance data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VaultPerformance'
+                  totalCount:
+                    type: integer
+
+  /vault-performances/{vaultPerformanceId}:
+    get:
+      summary: Get vault performance by ID
+      tags: [Vault Performances]
+      parameters:
+        - name: vaultPerformanceId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Vault performance entry
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VaultPerformance'
+
+components:
+  schemas:
+    VaultPerformance:
+      type: object
+      properties:
+        _id: { type: string }
+        vaultId: { type: string }
+        timestamp: { type: string, format: date-time }
+        tvl: { type: number }
+        pricePerShare: { type: number }
+        dailyApr: { type: number }
+        weeklyApr: { type: number }
+        monthlyApr: { type: number }
+        yearlyApr: { type: number }
+        netFlow: { type: number }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }

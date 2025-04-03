@@ -1,0 +1,45 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Vault Latest Blocks
+  version: 1.18.0
+  description: Real-time snapshots of the latest known state of each vault.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Vault Latest Blocks
+    description: Most recent blockchain state of each vault
+
+paths:
+  /vault-latest-blocks:
+    get:
+      summary: Get latest block data for all vaults
+      tags: [Vault Latest Blocks]
+      responses:
+        '200':
+          description: Latest vault snapshot data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VaultLatestBlock'
+                  totalCount:
+                    type: integer
+
+components:
+  schemas:
+    VaultLatestBlock:
+      type: object
+      properties:
+        vaultId: { type: string }
+        blockNumber: { type: number }
+        pricePerShare: { type: number }
+        tvl: { type: number }
+        apr: { type: number }
+        timestamp: { type: string, format: date-time }
+        chainId: { type: string }

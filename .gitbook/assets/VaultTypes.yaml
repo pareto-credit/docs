@@ -1,0 +1,81 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Vault Types
+  version: 1.18.0
+  description: Vault classification types used to define structure and behavior of vault contracts.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Vault Types
+    description: Categorization types assigned to vault implementations
+
+paths:
+  /vault-types:
+    get:
+      summary: List all vault types
+      tags: [Vault Types]
+      responses:
+        '200':
+          description: A list of vault types
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [data, totalCount]
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VaultType'
+                  totalCount:
+                    type: integer
+
+  /vault-types/{typeId}:
+    get:
+      summary: Get vault type by ID
+      tags: [Vault Types]
+      parameters:
+        - name: typeId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: A single vault type
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VaultType'
+
+components:
+  schemas:
+    VaultType:
+      type: object
+      required:
+        - _id
+        - code
+        - name
+        - description
+        - createdAt
+        - createdBy
+        - updatedAt
+        - updatedBy
+      properties:
+        _id: { type: string, description: "Vault type unique identifier" }
+        code: { type: string, description: "Internal code used for referencing" }
+        name:
+          type: object
+          properties:
+            en: { type: string }
+          required: [en]
+        description:
+          type: object
+          properties:
+            en: { type: string }
+          required: [en]
+        createdAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedAt: { type: string, format: date-time }
+        updatedBy: { type: string }

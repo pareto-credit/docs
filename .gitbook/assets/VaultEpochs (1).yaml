@@ -1,0 +1,118 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Vault Epochs
+  version: 1.18.0
+  description: Accounting periods used by vaults to determine rewards, liquidity windows, and protocol logic.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Vault Epochs
+    description: Epoch windows for yield distribution and vault accounting
+
+paths:
+  /vault-epochs:
+    get:
+      summary: List all vault epochs
+      tags: [Vault Epochs]
+      responses:
+        '200':
+          description: A list of vault epochs
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VaultEpoch'
+                  totalCount:
+                    type: integer
+
+components:
+  schemas:
+    VaultEpoch:
+      type: object
+      required:
+        - _id
+        - vaultId
+        - vaultAddress
+        - block
+        - count
+        - status
+        - startDate
+        - endDate
+        - apr
+        - lastApr
+        - expectedInterest
+        - unclaimedFees
+        - deposits
+        - duration
+        - bufferDuration
+        - withdrawType
+        - withdraws
+        - depositQueue
+        - withdrawQueue
+        - instantWithdraws
+        - createdAt
+        - updatedAt
+        - createdBy
+        - updatedBy
+      properties:
+        _id: { type: string }
+        vaultId: { type: string }
+        vaultAddress: { type: string }
+        block:
+          type: object
+          properties:
+            number: { type: number }
+            timestamp: { type: number }
+        count: { type: number }
+        status:
+          type: string
+          enum: [WAITING, RUNNING, DEFAULTED, CURE]
+        startDate: { type: string, format: date-time }
+        endDate: { type: string, format: date-time }
+        startCureDate: { type: string, format: date-time }
+        apr: { type: number }
+        lastApr: { type: number }
+        expectedInterest: { type: string }
+        unclaimedFees: { type: string }
+        deposits: { type: string }
+        duration: { type: number }
+        bufferDuration: { type: number }
+        withdrawType:
+          type: string
+          enum: [INSTANT, STANDARD]
+        withdraws:
+          type: object
+          properties:
+            amount: { type: string }
+            fees: { type: string }
+        depositQueue:
+          type: object
+          properties:
+            amount: { type: string }
+            lastAmount: { type: string }
+            isInstant: { type: boolean }
+        withdrawQueue:
+          type: object
+          properties:
+            amount: { type: string }
+            lastAmount: { type: string }
+            isInstant: { type: boolean }
+        instantWithdraws:
+          type: object
+          properties:
+            allowed: { type: boolean }
+            delay: { type: number }
+            amount: { type: string }
+            aprDelta: { type: number }
+            deadline: { type: string, format: date-time }
+            disabled: { type: boolean }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedBy: { type: string }

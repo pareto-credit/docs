@@ -1,0 +1,168 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Vaults
+  version: 1.18.0
+  description: On-chain investment vehicles for managing user deposits, yields, and rewards.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Vaults
+    description: Core financial vault entities within Pareto protocol
+
+paths:
+  /vaults:
+    get:
+      summary: List all vaults
+      tags: [Vaults]
+      responses:
+        '200':
+          description: A list of vaults
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Vault'
+                  totalCount:
+                    type: integer
+
+  /vaults/{vaultId}:
+    get:
+      summary: Get vault by ID
+      tags: [Vaults]
+      parameters:
+        - name: vaultId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Single vault object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Vault'
+
+  /vaults/performances:
+    get:
+      summary: Aggregated vault performance list
+      tags: [Vaults]
+      responses:
+        '200':
+          description: Vaults performance metrics
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items: { type: object }
+                  totalCount:
+                    type: integer
+
+  /vaults/{vaultId}/integrations:
+    get:
+      summary: Get integrations related to a vault
+      tags: [Vaults]
+      parameters:
+        - name: vaultId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Integration data
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+
+components:
+  schemas:
+    Vault:
+      type: object
+      required:
+        - _id
+        - tokenId
+        - chainId
+        - typeId
+        - categoryId
+        - operatorIds
+        - name
+        - address
+        - symbol
+        - protocol
+        - contractType
+        - abi
+        - description
+        - visibility
+        - status
+        - feePercentage
+        - createdAt
+        - createdBy
+        - updatedAt
+        - updatedBy
+      properties:
+        _id: { type: string }
+        tokenId: { type: string }
+        chainId: { type: string }
+        typeId: { type: string }
+        categoryId: { type: string }
+        operatorIds:
+          type: array
+          items: { type: string }
+        name: { type: string }
+        address: { type: string }
+        symbol: { type: string }
+        protocol:
+          type: string
+          enum: [Idle, Clearpool, AaveV2, Morpho, Gearbox, Compound, Lido, InstadApp, Ethena, UniswapV2, UniswapV3]
+        contractType:
+          type: string
+          enum: [BestYield, CDO, CDO_EPOCH]
+        abi:
+          type: array
+          items: { type: object }
+        description:
+          type: object
+          properties:
+            en: { type: string }
+        shortDescription:
+          type: object
+          properties:
+            en: { type: string }
+        caption:
+          type: object
+          properties:
+            en: { type: string }
+        keyInfo:
+          type: array
+          items:
+            type: object
+            properties:
+              label:
+                type: object
+                properties:
+                  en: { type: string }
+              value:
+                type: object
+                properties:
+                  en: { type: string }
+        visibility:
+          type: string
+          enum: [HIDDEN, RESTRICTED, PUBLIC]
+        status:
+          type: string
+          enum: [PAUSED, DISABLED, READY, EXPERIMENTAL, BOOSTED]
+        feePercentage: { type: number }
+        createdAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedAt: { type: string, format: date-time }
+        updatedBy: { type: string }

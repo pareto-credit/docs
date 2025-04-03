@@ -1,0 +1,67 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Tokens
+  version: 1.18.0
+  description: ERC-20 compatible assets supported and tracked by the Pareto protocol.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Tokens
+    description: Supported ERC-20 assets tracked across chains
+
+paths:
+  /tokens:
+    get:
+      summary: List all tokens
+      tags: [Tokens]
+      responses:
+        '200':
+          description: A list of tokens
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Token'
+                  totalCount:
+                    type: integer
+
+  /tokens/{tokenId}:
+    get:
+      summary: Get token by ID
+      tags: [Tokens]
+      parameters:
+        - name: tokenId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Token details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Token'
+
+components:
+  schemas:
+    Token:
+      type: object
+      properties:
+        _id: { type: string }
+        name: { type: string }
+        symbol: { type: string }
+        decimals: { type: number }
+        address: { type: string }
+        chainId: { type: string }
+        logoURI: { type: string }
+        underlying: { type: boolean }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedBy: { type: string }

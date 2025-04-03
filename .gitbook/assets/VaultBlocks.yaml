@@ -1,0 +1,68 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Vault Blocks
+  version: 1.18.0
+  description: Historical snapshots of vault performance at specific blockchain blocks.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Vault Blocks
+    description: Snapshots of vault data per blockchain block
+
+paths:
+  /vault-blocks:
+    get:
+      summary: List all vault blocks
+      tags: [Vault Blocks]
+      responses:
+        '200':
+          description: A list of vault blocks
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VaultBlock'
+                  totalCount:
+                    type: integer
+
+  /vault-blocks/{vaultBlockId}:
+    get:
+      summary: Get vault block by ID
+      tags: [Vault Blocks]
+      parameters:
+        - name: vaultBlockId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Vault block details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VaultBlock'
+
+components:
+  schemas:
+    VaultBlock:
+      type: object
+      properties:
+        _id: { type: string }
+        vaultId: { type: string }
+        blockNumber: { type: number }
+        chainId: { type: string }
+        timestamp: { type: string, format: date-time }
+        tvl: { type: number }
+        apr: { type: number }
+        pricePerShare: { type: number }
+        shareSupply: { type: number }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedBy: { type: string }

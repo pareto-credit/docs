@@ -1,0 +1,100 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Vault Performances
+  version: 1.18.0
+  description: Analytics and yield tracking metrics for vaults over time.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Vault Performances
+    description: Historical performance and yield analytics for vaults
+
+paths:
+  /vault-performances:
+    get:
+      summary: List all vault performance entries
+      tags: [Vault Performances]
+      responses:
+        '200':
+          description: Vault performance data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VaultPerformance'
+                  totalCount:
+                    type: integer
+
+  /vault-performances/{vaultPerformanceId}:
+    get:
+      summary: Get vault performance by ID
+      tags: [Vault Performances]
+      parameters:
+        - name: vaultPerformanceId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Vault performance entry
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VaultPerformance'
+
+components:
+  schemas:
+    VaultPerformance:
+      type: object
+      required:
+        - _id
+        - vaultId
+        - vaultBlockId
+        - block
+        - age
+        - holders
+        - realizedAPY
+        - accruedRewards
+        - earnings
+        - createdAt
+        - updatedAt
+        - createdBy
+        - updatedBy
+      properties:
+        _id: { type: string }
+        vaultId: { type: string }
+        vaultBlockId: { type: string }
+        block:
+          type: object
+          properties:
+            number: { type: number }
+            timestamp: { type: number }
+        age: { type: number }
+        holders: { type: number }
+        realizedAPY: { type: number }
+        accruedRewards:
+          type: array
+          items:
+            type: object
+            properties:
+              tokenId: { type: string }
+              amount: { type: string }
+              amountUSD: { type: string }
+              APR: { type: number }
+              percentage: { type: number }
+        earnings:
+          type: object
+          properties:
+            USD: { type: string }
+            token: { type: string }
+            percentage: { type: number }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedBy: { type: string }

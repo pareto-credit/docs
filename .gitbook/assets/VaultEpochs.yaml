@@ -1,0 +1,53 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Vault Epochs
+  version: 1.18.0
+  description: Accounting timeframes used in vault performance and liquidity logic.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Vault Epochs
+    description: Time-based periods for vault accounting and performance
+
+paths:
+  /vault-epochs:
+    get:
+      summary: List all vault epochs
+      tags: [Vault Epochs]
+      responses:
+        '200':
+          description: A list of vault epochs
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VaultEpoch'
+                  totalCount:
+                    type: integer
+
+components:
+  schemas:
+    VaultEpoch:
+      type: object
+      properties:
+        _id: { type: string }
+        vaultId: { type: string }
+        epochIndex: { type: number }
+        startDate: { type: string, format: date-time }
+        endDate: { type: string, format: date-time }
+        isActive: { type: boolean }
+        status:
+          type: string
+          enum: [OPEN, CLOSED, FINALIZED]
+        apr: { type: number }
+        tvl: { type: number }
+        pricePerShareStart: { type: number }
+        pricePerShareEnd: { type: number }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }

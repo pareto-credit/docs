@@ -1,0 +1,67 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Token Blocks
+  version: 1.18.0
+  description: Snapshot data of tokens at specific block heights.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Token Blocks
+    description: Block-level data for tokens used in analytics and vault strategies
+
+paths:
+  /token-blocks:
+    get:
+      summary: List all token blocks
+      tags: [Token Blocks]
+      responses:
+        '200':
+          description: A list of token blocks
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/TokenBlock'
+                  totalCount:
+                    type: integer
+
+  /token-blocks/{tokenBlockId}:
+    get:
+      summary: Get token block by ID
+      tags: [Token Blocks]
+      parameters:
+        - name: tokenBlockId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Token block details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenBlock'
+
+components:
+  schemas:
+    TokenBlock:
+      type: object
+      properties:
+        _id: { type: string }
+        tokenId: { type: string }
+        chainId: { type: string }
+        blockNumber: { type: number }
+        price: { type: number }
+        liquidity: { type: number }
+        volume: { type: number }
+        timestamp: { type: string, format: date-time }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedBy: { type: string }

@@ -1,0 +1,132 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Vault Blocks
+  version: 1.18.0
+  description: Snapshots of vault data captured at specific block heights on-chain.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Vault Blocks
+    description: Detailed snapshots of vault state per blockchain block
+
+paths:
+  /vault-blocks:
+    get:
+      summary: List all vault blocks
+      tags: [Vault Blocks]
+      responses:
+        '200':
+          description: A list of vault blocks
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VaultBlock'
+                  totalCount:
+                    type: integer
+
+  /vault-blocks/{vaultBlockId}:
+    get:
+      summary: Get vault block by ID
+      tags: [Vault Blocks]
+      parameters:
+        - name: vaultBlockId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Vault block details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VaultBlock'
+
+components:
+  schemas:
+    VaultBlock:
+      type: object
+      required:
+        - _id
+        - vaultId
+        - vaultAddress
+        - block
+        - APRs
+        - APYs
+        - totalSupply
+        - price
+        - TVL
+        - pools
+        - createdAt
+        - updatedAt
+        - createdBy
+        - updatedBy
+      properties:
+        _id: { type: string }
+        vaultId: { type: string }
+        vaultAddress: { type: string }
+        block:
+          type: object
+          properties:
+            number: { type: number }
+            timestamp: { type: number }
+        APRs:
+          type: object
+          properties:
+            BASE: { type: number }
+            HARVEST: { type: number }
+            REWARDS: { type: number }
+            GROSS: { type: number }
+            NET: { type: number }
+            FEE: { type: number }
+        APYs:
+          type: object
+          properties:
+            BASE: { type: number }
+            HARVEST: { type: number }
+            REWARDS: { type: number }
+            GROSS: { type: number }
+            NET: { type: number }
+            FEE: { type: number }
+        totalSupply: { type: string }
+        price: { type: string }
+        TVL:
+          type: object
+          properties:
+            token: { type: string }
+            USD: { type: string }
+        pools:
+          type: array
+          items:
+            type: object
+            properties:
+              address: { type: string }
+              protocol: { type: string }
+              rates:
+                type: object
+                properties:
+                  supply: { type: number }
+                  borrow: { type: number }
+              utilization:
+                type: object
+                properties:
+                  supplied: { type: string }
+                  borrowed: { type: string }
+                  rate: { type: number }
+              available:
+                type: object
+                properties:
+                  toBorrow: { type: string }
+                  toWithDraw: { type: string }
+        allocations:
+          type: array
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedBy: { type: string }

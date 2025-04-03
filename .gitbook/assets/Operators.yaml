@@ -1,0 +1,66 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Operators
+  version: 1.18.0
+  description: Endpoints for retrieving entities that manage or integrate with Pareto vaults.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Operators
+    description: Entities managing or integrating with Pareto vaults
+
+paths:
+  /operators:
+    get:
+      summary: List all operators
+      tags: [Operators]
+      responses:
+        '200':
+          description: A list of operators
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Operator'
+                  totalCount:
+                    type: integer
+
+  /operators/{operatorId}:
+    get:
+      summary: Get operator by ID
+      tags: [Operators]
+      parameters:
+        - name: operatorId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Operator details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Operator'
+
+components:
+  schemas:
+    Operator:
+      type: object
+      properties:
+        _id: { type: string }
+        name: { type: string }
+        description: { type: string }
+        image: { type: string }
+        vaults:
+          type: array
+          items: { type: string }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedBy: { type: string }

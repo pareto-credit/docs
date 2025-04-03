@@ -1,0 +1,68 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Vault Categories
+  version: 1.18.0
+  description: Groupings of vaults by strategy type or risk profile.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Vault Categories
+    description: Logical groupings of vaults by type or risk level
+
+paths:
+  /vault-categories:
+    get:
+      summary: List all vault categories
+      tags: [Vault Categories]
+      responses:
+        '200':
+          description: A list of vault categories
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VaultCategory'
+                  totalCount:
+                    type: integer
+
+  /vault-categories/{typeId}:
+    get:
+      summary: Get vault category by ID
+      tags: [Vault Categories]
+      parameters:
+        - name: typeId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Vault category details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VaultCategory'
+
+components:
+  schemas:
+    VaultCategory:
+      type: object
+      properties:
+        _id: { type: string }
+        typeId: { type: string }
+        name:
+          type: object
+          additionalProperties: { type: string }
+        description:
+          type: object
+          additionalProperties: { type: string }
+        icon: { type: string }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedBy: { type: string }

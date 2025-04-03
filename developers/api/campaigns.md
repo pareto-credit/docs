@@ -1,8 +1,8 @@
 # Campaigns
 
-Campaigns are point-based programs used to incentivize user behavior on Pareto. Users can earn points by interacting with vaults or participating in social activities.
+Campaigns are point-based programs used to incentivize user activities on Pareto. Users can earn points by interacting with vaults or participating in social activities.
 
-### 🎯 Model Structure
+## Structure
 
 Each campaign object includes:
 
@@ -25,13 +25,14 @@ Each campaign object includes:
 * `link` _(string)_ — URL
 * `galxeId` _(number)_ — External reference
 * `createdAt`, `updatedAt` _(string)_ — ISO timestamp
-* `createdBy`, `updatedBy` _(string)_ — Actor IDs\
+* `createdBy`, `updatedBy` _(string)_ — Actor IDs
 
+## Endpoints
 
-### 📡 Endpoints
+{% openapi src="../../.gitbook/assets/Campaigns.yaml" path="/campaigns" method="get" %}
+[Campaigns.yaml](../../.gitbook/assets/Campaigns.yaml)
+{% endopenapi %}
 
-
-
-
-
-***
+{% openapi src="../../.gitbook/assets/Campaigns.yaml" path="/campaigns/{campaignId}" method="get" %}
+[Campaigns.yaml](../../.gitbook/assets/Campaigns.yaml)
+{% endopenapi %}

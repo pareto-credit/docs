@@ -1,0 +1,125 @@
+openapi: 3.0.3
+info:
+  title: Pareto API - Chains
+  version: 1.18.0
+  description: Supported blockchain networks within Pareto's infrastructure.
+
+servers:
+  - url: https://api.pareto.credit/v1
+
+tags:
+  - name: Chains
+    description: Supported blockchain networks
+
+paths:
+  /chains:
+    get:
+      summary: List all chains
+      tags: [Chains]
+      responses:
+        '200':
+          description: A list of chains
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Chain'
+                  totalCount:
+                    type: integer
+    post:
+      summary: Create a new chain
+      tags: [Chains]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Chain'
+      responses:
+        '201':
+          description: Chain created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Chain'
+
+  /chains/{chainId}:
+    get:
+      summary: Get chain by ID
+      tags: [Chains]
+      parameters:
+        - name: chainId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Chain details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Chain'
+    put:
+      summary: Update a chain
+      tags: [Chains]
+      parameters:
+        - name: chainId
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Chain'
+      responses:
+        '200':
+          description: Chain updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Chain'
+    delete:
+      summary: Delete a chain
+      tags: [Chains]
+      parameters:
+        - name: chainId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '204':
+          description: Chain deleted
+
+components:
+  schemas:
+    Chain:
+      type: object
+      properties:
+        _id: { type: string }
+        name: { type: string }
+        hex: { type: string }
+        blocksPerYear: { type: number }
+        tokenSymbol: { type: string }
+        chainID: { type: number }
+        RPCs:
+          type: array
+          items:
+            type: object
+            properties:
+              provider: { type: string, enum: [INFURA, ALCHEMY] }
+              https: { type: string }
+              wss: { type: string }
+              name: { type: string }
+              isPublic: { type: boolean }
+        color: { type: string }
+        isDisabled: { type: boolean }
+        createdAt: { type: string, format: date-time }
+        createdBy: { type: string }
+        updatedAt: { type: string, format: date-time }
+        updatedBy: { type: string }
