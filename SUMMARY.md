@@ -28,3 +28,7 @@
   * [Vault epochs](developers/api/vault-epochs.md)
   * [Vault performances](developers/api/vault-performances.md)
   * [Vault types](developers/api/vault-types.md)
+
+## Resources
+
+* [Media kit](resources/media-kit.md)
