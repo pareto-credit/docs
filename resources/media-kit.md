@@ -8,7 +8,7 @@ Pareto brand guidelines provide logos, icons, descriptions about the brand.
 
 <summary>Tagline</summary>
 
-[Pareto](https://pareto.credit/) is an on-chain private credit marketplace.&#x20;
+Pareto is an on-chain private credit marketplace.&#x20;
 
 </details>
 
@@ -42,6 +42,12 @@ Pareto's logo visually represents the core principles of liquidity flow, financi
 
 {% file src="../.gitbook/assets/Pareto's logo (1).zip" %}
 
+### Typography
+
+Primary font: [GT Sectra](https://www.grillitype.com/typeface/gt-sectra)
+
+Secondary font: [GT America Mono](https://www.grillitype.com/typeface/gt-america)
+
 ### Colours
 
 #### Primary colours
@@ -51,9 +57,3 @@ Pareto's logo visually represents the core principles of liquidity flow, financi
 #### Secondary colours
 
 <table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>#70B19E</td><td><a href="../.gitbook/assets/Docs_colours_green_v2.png">Docs_colours_green_v2.png</a></td></tr><tr><td>#48685A</td><td><a href="../.gitbook/assets/Docs_colours_green_v3.png">Docs_colours_green_v3.png</a></td></tr><tr><td>#D7E4EA</td><td><a href="../.gitbook/assets/Docs_colours_light_blue.png">Docs_colours_light_blue.png</a></td></tr></tbody></table>
-
-### Typography
-
-Primary font: [GT Sectra](https://www.grillitype.com/typeface/gt-sectra)
-
-Secondary font: [GT America Mono](https://www.grillitype.com/typeface/gt-america)
