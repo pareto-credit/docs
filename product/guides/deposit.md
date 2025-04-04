@@ -16,7 +16,7 @@ Upon completion:
 * The user’s wallet will reflect a reduction in the deposited stablecoin
 * The user will receive [Credit Vault LP tokens](../../developers/addresses/product.md) representing their position in the pool
 
-{% embed url="https://youtu.be/iBsuGk16qp0" %}
+{% embed url="https://youtu.be/TO6t9Kx1ulg" %}
 
 ## While a lending cycle is running
 

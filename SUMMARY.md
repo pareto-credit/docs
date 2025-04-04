@@ -1,8 +1,10 @@
 # Table of contents
 
+* [Overview](README.md)
+
 ## Product
 
-* [Guides](README.md)
+* [Guides](<README (2).md>)
   * [Onboarding](product/guides/onboarding.md)
   * [Deposit](product/guides/deposit.md)
 
