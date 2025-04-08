@@ -16,7 +16,7 @@ Pareto is an on-chain private credit marketplace.&#x20;
 
 <summary>Short description</summary>
 
-Pareto is a private credit marketplace that connects institutional lenders and borrowers, offering scalable yield opportunities to bridge institutional capital on-chain.
+Pareto is a private credit marketplace that connects institutional lenders and borrowers, providing scalable, yield-generating opportunities and bridging institutional capital on-chain.
 
 </details>
 
@@ -24,9 +24,9 @@ Pareto is a private credit marketplace that connects institutional lenders and b
 
 <summary>Boilerplate description</summary>
 
-Pareto is a private credit marketplace that connects institutional lenders and borrowers, offering scalable yield opportunities to bridge institutional capital on-chain.
+Pareto is a private credit marketplace that connects institutional lenders and borrowers, providing scalable, yield-generating opportunities and bridging institutional capital on-chain.
 
-Designed for asset managers, digital asset funds, and institutional investors, our comprehensive infrastructure provides seamless access to regulatory-compliant alternative credit solutions. Built on transparency, scalability, and automation, Pareto’s Credit Vaults eliminate bureaucratic friction, reduce operational costs, and enhance capital efficiency.
+Tailored for asset managers, digital asset funds, and other professional investors, Pareto offers seamless access to regulatory-compliant alternative credit products. Its infrastructure emphasizes transparency, automation, and flexibility. Credit Vaults are the core primitive: they eliminate utilization-based inefficiencies, reduce operational overhead, and improve capital efficiency for both lenders and borrowers.
 
 As the financial landscape evolves, Pareto aims to set a new standard for institutional credit with fully automated, data-driven lending solutions.
 

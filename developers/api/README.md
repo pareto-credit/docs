@@ -22,7 +22,7 @@ This is the active **major version v1** of the API. All endpoints listed are par
 
 ## Endpoints
 
-### [Campaigns](campaigns.md)
+#### [Campaigns](campaigns.md)
 
 A campaign is a points-based engagement program that allows users to earn rewards by interacting with Pareto.
 
@@ -30,33 +30,33 @@ A campaign is a points-based engagement program that allows users to earn reward
 * `GET /v1/campaigns/:campaignId` — Get campaign by ID
 * `GET /v1/campaigns/:campaignId/points` — Get campaign points
 
-### [Chains](chains.md)
+#### [Chains](chains.md)
 
 * `GET /v1/chains` — List supported chains
 * `GET /v1/chains/:chainId` — Get chain by ID
 
-### [Operators](operators.md)
+#### [Operators](operators.md)
 
 An entity managing or integrating with Pareto products.
 
 * `GET /v1/operators` — List all operators
 * `GET /v1/operators/:operatorId` — Get operator by ID
 
-### [Token blocks](token-blocks.md)
+#### [Token blocks](token-blocks.md)
 
 * `GET /v1/token-blocks` — List all token blocks
 * `GET /v1/token-blocks/:tokenBlockId` — Get token block by ID
 
-### [Tokens](tokens.md)
+#### [Tokens](tokens.md)
 
 * `GET /v1/tokens` — List all tokens
 * `GET /v1/tokens/:tokenId` — Get token by ID
 
-### [Transactions](transactions.md)
+#### [Transactions](transactions.md)
 
 * `GET /v1/transactions` — List all protocol transactions
 
-### [Vaults](vaults.md)
+#### [Vaults](vaults.md)
 
 A yield-generating smart contract product.
 
@@ -65,29 +65,29 @@ A yield-generating smart contract product.
 * `GET /v1/vaults/performances` — Vault performance overview
 * `GET /v1/vaults/:vaultId/integrations` — Integrations by vault ID
 
-### [Vault blocks](vault-blocks.md)
+#### [Vault blocks](vault-blocks.md)
 
 * `GET /v1/vault-blocks` — List all vault blocks
 * `GET /v1/vault-blocks/:vaultBlockId` — Get vault block by ID
 * `GET /v1/vault-latest-blocks` — Latest block data for vaults
 
-### [Vault categories](vault-categories.md)
+#### [Vault categories](vault-categories.md)
 
 * `GET /v1/vault-categories` — List all vault categories
 * `GET /v1/vault-categories/:typeId` — Get category by ID
 
-### [Vault epochs](vault-epochs.md)
+#### [Vault epochs](vault-epochs.md)
 
 A predefined period for vault accounting.
 
 * `GET /v1/vault-epochs` — List all vault epochs
 
-### [Vault performances](vault-performances.md)
+#### [Vault performances](vault-performances.md)
 
 * `GET /v1/vault-performances` — List all performance metrics
 * `GET /v1/vault-performances/:vaultPerformanceId` — Get performance by ID
 
-### [Vault types](vault-types.md)
+#### [Vault types](vault-types.md)
 
 * `GET /v1/vault-types` — List all vault types
 * `GET /v1/vault-types/:typeId` — Get vault type by ID
