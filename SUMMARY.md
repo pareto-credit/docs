@@ -4,9 +4,15 @@
 
 ## Product
 
-* [Guides](<README (2).md>)
-  * [Onboarding](product/guides/onboarding.md)
-  * [Deposit](product/guides/deposit.md)
+* [Lenders](product/lenders/README.md)
+  * [Guides](product/lenders/guides/README.md)
+    * [Onboarding](product/lenders/guides/onboarding.md)
+    * [Deposit](product/lenders/guides/deposit.md)
+* [Curators](product/curators.md)
+
+***
+
+* [Borrowers](borrowers.md)
 
 ## Developers
 
