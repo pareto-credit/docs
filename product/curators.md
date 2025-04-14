@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Curators
 
 Curators are an integral part of the Credit Vault setup and are essential for stakeholder relations and vault activities. They can leverage underwriting on-chain expertise to enhance capital efficiency, mitigate counterparty risk, and elevate market transparency with institutional-grade credit structuring.

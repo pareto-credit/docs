@@ -19,8 +19,7 @@
 * [Addresses](<README (1).md>)
   * [Product](developers/addresses/product.md)
   * [Governance](developers/addresses/governance.md)
-* [Security](developers/security/README.md)
-  * [Audits](developers/security/audits.md)
+* [Integrators](developers/integrators.md)
 * [API](developers/api/README.md)
   * [Campaigns](developers/api/campaigns.md)
   * [Chains](developers/api/chains.md)
@@ -34,6 +33,8 @@
   * [Vault epochs](developers/api/vault-epochs.md)
   * [Vault performances](developers/api/vault-performances.md)
   * [Vault types](developers/api/vault-types.md)
+* [Security](developers/security/README.md)
+  * [Audits](developers/security/audits.md)
 
 ## Resources
 

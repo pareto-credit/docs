@@ -10,7 +10,7 @@ https://api.pareto.credit/
 
 This is the active **major version v1** of the API. All endpoints listed are part of the `v1` namespace.
 
-## Quick Start
+## Quick start
 
 1. **Request an API key** via [this form](https://tally.so/r/mY9y6B). Once approved, you will receive a key for authentication
 2. Use your preferred HTTP client (e.g., Postman, Axios, cURL)

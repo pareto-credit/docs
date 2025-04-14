@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Borrowers
 
 Borrowers are essential to offer yield strategies to liquidity providers on Pareto.&#x20;
