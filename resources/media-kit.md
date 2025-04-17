@@ -1,6 +1,6 @@
 # Media kit
 
-Pareto brand guidelines provide logos, icons, descriptions about the brand.
+Pareto brand guidelines provide logos, icons, and descriptions about the brand.
 
 ## About Pareto
 

@@ -25,7 +25,7 @@ To execute the lending action
 Upon completion:
 
 * The user’s wallet will reflect a reduction in the deposited stablecoin
-* The user will receive [Credit Vault LP tokens](../../../developers/addresses/product.md) representing their position in the pool
+* The user will receive [Credit Vault LP tokens](../../../../developers/addresses/product.md) representing their position in the pool
 
 {% embed url="https://youtu.be/TO6t9Kx1ulg" %}
 

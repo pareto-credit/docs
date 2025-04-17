@@ -4,15 +4,15 @@
 
 ## Product
 
-* [Lenders](product/lenders/README.md)
-  * [Guides](product/lenders/guides/README.md)
-    * [Onboarding](product/lenders/guides/onboarding.md)
-    * [Deposit](product/lenders/guides/deposit.md)
-* [Curators](product/curators.md)
-
-***
-
-* [Borrowers](borrowers.md)
+* [Credit Vaults](product/credit-vaults.md)
+* [Users](product/users/README.md)
+  * [Lenders](product/users/lenders/README.md)
+    * [Verification](product/users/lenders/verification.md)
+    * [Guides](product/users/lenders/guides/README.md)
+      * [Onboarding](product/users/lenders/guides/onboarding.md)
+      * [Deposit](product/users/lenders/guides/deposit.md)
+  * [Curators](product/users/curators.md)
+  * [Borrowers](product/users/borrowers.md)
 
 ## Developers
 
