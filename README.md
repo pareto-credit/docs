@@ -14,7 +14,7 @@ layout:
 
 # Overview
 
-<figure><img src=".gitbook/assets/Docs_cover.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Docs_cover_green.png" alt=""><figcaption></figcaption></figure>
 
 Welcome to Pareto’s official documentation! \
 \
