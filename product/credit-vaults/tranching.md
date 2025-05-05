@@ -87,7 +87,7 @@ $$\text{Tranche coverage} = \frac{\text{Liquidity}_{Junior}}{\text{Liquidity}_{T
 
 ### Yield and loss scenarios <a href="#liquidity-ratios" id="liquidity-ratios"></a>
 
-Let's assume to have a Credit Vault generating a 10% yield (base APY), where users deposit 10,000,000 DAI split as follows: 70% on the Senior class, i.e. 7m, and 30% on the Junior class, i.e. 3m.&#x20;
+Let's assume to have a Credit Vault generating a 10% yield (base APY), where users deposit 10,000,000 DAI split as follows: 70% on the Senior class, and 30% on the Junior class.
 
 <figure><img src="../../.gitbook/assets/Docs_credit_vault_tranching_yield_loss.png" alt=""><figcaption></figcaption></figure>
 

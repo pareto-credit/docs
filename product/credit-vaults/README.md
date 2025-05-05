@@ -48,7 +48,7 @@ At the end of Cycle II, the borrower repays interest and any requested withdrawa
 
 When the interest rate of the next lending cycle is lower than the previous one by 1% or more (or otherwise provided in the Credit Agreement), lenders are entitled to an **early exit** and can redeem funds with a shorter waiting period, i.e., within 72 hours. &#x20;
 
-For example: A lender requests a withdrawal on Jan 31 during Cycle I, where the interest rate is 15%.  If the Cycle II rate drops to 12%, the lender qualifies for early exit and can claim his funds 72 hours after Cycle II starts (i.e., on Feb 3).
+For example, a lender requests a withdrawal on Jan 31 during Cycle I, where the interest rate is 15%.  If the Cycle II rate drops to 12%, the lender qualifies for an early exit and can claim his funds 72 hours after Cycle II starts (i.e., on Feb 3).
 {% endhint %}
 
 ### Architecture

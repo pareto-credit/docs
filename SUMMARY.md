@@ -12,6 +12,7 @@
     * [Guides](product/users/lenders/guides/README.md)
       * [Onboarding](product/users/lenders/guides/onboarding.md)
       * [Deposit](product/users/lenders/guides/deposit.md)
+      * [Redeem](product/users/lenders/guides/redeem.md)
   * [Curators](product/users/curators.md)
   * [Borrowers](product/users/borrowers.md)
 
