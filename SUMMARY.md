@@ -4,7 +4,8 @@
 
 ## Product
 
-* [Credit Vaults](product/credit-vaults.md)
+* [Credit Vaults](product/credit-vaults/README.md)
+  * [Tranching](product/credit-vaults/tranching.md)
 * [Users](product/users/README.md)
   * [Lenders](product/users/lenders/README.md)
     * [Verification](product/users/lenders/verification.md)

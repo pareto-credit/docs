@@ -10,13 +10,13 @@ Users should sign two transactions:
 
 {% stepper %}
 {% step %}
-### Spending approval
+#### Spending approval
 
 To allow Pareto’s smart contract to process users’ deposits
 {% endstep %}
 
 {% step %}
-### Deposit
+#### Deposit
 
 To execute the lending action
 {% endstep %}
@@ -37,13 +37,13 @@ The same Spending Approval and deposit flow applies
 
 {% stepper %}
 {% step %}
-### Spending approval
+#### Spending approval
 
 To allow Pareto’s smart contract to process users’ deposits
 {% endstep %}
 
 {% step %}
-### Request deposit
+#### Request deposit
 
 To execute the deposit request action
 {% endstep %}

@@ -12,7 +12,7 @@ To begin:
 
 {% stepper %}
 {% step %}
-### Verification
+#### Verification
 
 By default, Credit Vaults offer a zero-knowledge (ZK) verification method powered by Keyring Connect. In select cases, a standard KYC process with document uploads should be followed instead.&#x20;
 
@@ -32,7 +32,7 @@ Note: Verified credentials aren't shared across all vaults on Pareto. New creden
 {% endstep %}
 
 {% step %}
-### Contract signature
+#### Contract signature
 
 Before depositing, users are required to sign two agreements:
 

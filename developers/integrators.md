@@ -16,13 +16,13 @@ This pattern is required for calling methods such as `depositAA`, `requestWithdr
 
 All API routes below belong to the public Pareto API at `https://api.pareto.credit`. Refer to the [API chapter](api/) for a complete overview.
 
-## 1. Required vault data
+### 1. Required vault data
 
 These steps outline the minimum data required to render a vault and enable interactions.
 
 {% stepper %}
 {% step %}
-### Load [Vault Entity](https://docs.pareto.credit/developers/api/vaults)
+#### Load [Vault Entity](https://docs.pareto.credit/developers/api/vaults)
 
 Use either:
 
@@ -33,7 +33,7 @@ Only vaults with `visibility: PUBLIC` should be displayed to users.
 {% endstep %}
 
 {% step %}
-### Retrieve Signatures
+#### Retrieve Signatures
 
 Each vault contains a `signatures` array of the form:
 
@@ -52,7 +52,7 @@ GET /v1/signatures?_id=signatureId1,signatureId2
 {% endstep %}
 
 {% step %}
-### Retrieve underlying [Token](https://docs.pareto.credit/developers/api/tokens)
+#### Retrieve underlying [Token](https://docs.pareto.credit/developers/api/tokens)
 
 Retrieve token information with:
 
@@ -60,7 +60,7 @@ Retrieve token information with:
 {% endstep %}
 
 {% step %}
-### Fetch latest [Vault Block](https://docs.pareto.credit/developers/api/vault-blocks)
+#### Fetch latest [Vault Block](https://docs.pareto.credit/developers/api/vault-blocks)
 
 Fetch up-to-date vault metrics. This includes share price, APRs, TVL, and queue configuration.
 
@@ -68,13 +68,13 @@ Fetch up-to-date vault metrics. This includes share price, APRs, TVL, and queue 
 {% endstep %}
 {% endstepper %}
 
-## 2. Required wallet access data
+### 2. Required wallet access data
 
 Defines the required checks and data fetches needed immediately after wallet connection to verify access and authorization for vault operations.
 
 {% stepper %}
 {% step %}
-### Check wallet access
+#### Check wallet access
 
 To verify if a wallet is allowed to interact with the vault, instantiate the contract using the `cdoEpoch` ABI and address retrieved from the vault JSON:
 
@@ -92,7 +92,7 @@ If `isAllowed` is false, initiate a KYC flow using [Keyring Connect SDK](https:/
 {% endstep %}
 
 {% step %}
-### Signature Validation
+#### Signature Validation
 
 Check if the required signatures have been signed:
 
@@ -114,7 +114,7 @@ Submit the signed hash:
 {% endstep %}
 
 {% step %}
-### Retrieve Wallet Position
+#### Retrieve Wallet Position
 
 Retrieve the wallet position to track users' deposits, claims, and balances.
 
@@ -124,13 +124,13 @@ GET /v1/vault/position?walletAddress={walletAddress}
 {% endstep %}
 {% endstepper %}
 
-## 3. Deposit flow
+### 3. Deposit flow
 
 Outlines the required contract state and transactions to successfully execute a deposit into a vault.
 
 {% stepper %}
 {% step %}
-### Verify allowance and balance
+#### Verify allowance and balance
 
 Instantiate the token contract using the vault token ABI and address:
 
@@ -151,7 +151,7 @@ Spender can be found in:
 {% endstep %}
 
 {% step %}
-### Approve token spending
+#### Approve token spending
 
 Make sure the amount respects the token's decimals (6 for USDC, USDT, 18 for the majority of ERC-20 tokens).
 
@@ -163,7 +163,7 @@ await tokenContract.methods
 {% endstep %}
 
 {% step %}
-### Submit Deposit Transaction
+#### Submit Deposit Transaction
 
 ```ts
 // during NETTING period
@@ -176,13 +176,13 @@ await depositQueueContract.methods
 {% endstep %}
 {% endstepper %}
 
-## 4. Withdraw flow
+### 4. Withdraw flow
 
 Describes how to prepare, calculate, and submit a withdrawal request from a vault, depending on its current status and configuration.
 
 {% stepper %}
 {% step %}
-### Fetch user balance and max withdrawable amount
+#### Fetch user balance and max withdrawable amount
 
 ```ts
 const vaultTokenContract = new web3.eth.Contract(
@@ -199,7 +199,7 @@ const maxWithdrawable = await cdoEpochContract.methods
 {% endstep %}
 
 {% step %}
-### Check allowance
+#### Check allowance
 
 The allowance must be verified only when the vault is in RUNNING state and uses the withdrawQueue. In this case, the `withdrawQueue` contract address should be used as `spender`.
 
@@ -212,7 +212,7 @@ const allowance = await tokenContract.methods
 {% endstep %}
 
 {% step %}
-### Compute the LP tokens required
+#### Compute the LP tokens required
 
 ```ts
 const percentage = 1000000 / maxWithdrawable;
@@ -221,7 +221,7 @@ const lpAmount = LPDeposited * percentage;
 {% endstep %}
 
 {% step %}
-### Submit withdrawal request
+#### Submit withdrawal request
 
 Track requests in the `block.requests` array
 
@@ -237,8 +237,6 @@ await withdrawQueueContract.methods
 ```
 {% endstep %}
 {% endstepper %}
-
-***
 
 ## Managing requests
 

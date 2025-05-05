@@ -14,7 +14,7 @@ Credit Vaults introduce several innovations to address inefficiencies in traditi
 
 ### Flow of funds
 
-<figure><img src="../.gitbook/assets/Docs_credit_vault_flows.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Docs_credit_vault_flows.png" alt=""><figcaption></figcaption></figure>
 
 Credit Vaults operate on a cycle-based system. Funds are borrowed in fixed time intervals known as lending cycles.  The IRM and the duration of the first cycle are defined at vault deployment. Thereafter, at the end of each cycle, the curator can update these parameters.
 
@@ -55,6 +55,6 @@ For example: A lender requests a withdrawal on Jan 31 during Cycle I, where the 
 
 The diagram illustrates the architecture of Credit Vaults
 
-<figure><img src="../.gitbook/assets/Docs_credit_vault_architecture.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Docs_credit_vault_architecture.png" alt=""><figcaption></figcaption></figure>
 
 The curator, with the express consent of lenders and the borrower, retains the authority to modify, amend, or adjust CV's parameters as necessary to accommodate requests from lenders or the borrower, or to ensure alignment with the terms and conditions outlined in the MLA.
