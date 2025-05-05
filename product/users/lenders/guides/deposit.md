@@ -47,12 +47,18 @@ To allow Pareto’s smart contract to process users’ deposits
 
 To execute the deposit request action
 {% endstep %}
+
+{% step %}
+#### Claim LP tokens
+
+The user will **need to claim** Credit Vault LP tokens representing his position in the pool after the new lending cycle starts
+{% endstep %}
 {% endstepper %}
 
-Upon completion:
+Upon completion of steps 1, and 2:
 
 * The user’s wallet will reflect a reduction in the deposited stablecoin
-* The user will **need to claim** Credit Vault LP tokens representing his position in the pool after the new lending cycle starts
+* The user will need to claim his [Credit Vault LP tokens](../../../../developers/addresses/product.md) representing his position in the pool after the new lending cycle starts
 
 <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Claim LP tokens preview when a deposit was made during a cycle running</p></figcaption></figure>
 
