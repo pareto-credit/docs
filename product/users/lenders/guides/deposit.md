@@ -25,7 +25,7 @@ To execute the lending action
 Upon completion:
 
 * The user’s wallet will reflect a reduction in the deposited stablecoin
-* The user will receive [Credit Vault LP tokens](../../../../developers/addresses/product.md) representing his position in the pool
+* The user will receive [Credit Vault LP tokens](../../../../developers/addresses/product/credit-vaults.md) representing his position in the pool
 
 {% embed url="https://youtu.be/TO6t9Kx1ulg" %}
 
@@ -58,7 +58,7 @@ The user will **need to claim** Credit Vault LP tokens representing his position
 Upon completion of steps 1, and 2:
 
 * The user’s wallet will reflect a reduction in the deposited stablecoin
-* The user will need to claim his [Credit Vault LP tokens](../../../../developers/addresses/product.md) representing his position in the pool after the new lending cycle starts
+* The user will need to claim his [Credit Vault LP tokens](../../../../developers/addresses/product/credit-vaults.md) representing his position in the pool after the new lending cycle starts
 
 <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Claim LP tokens preview when a deposit was made during a cycle running</p></figcaption></figure>
 

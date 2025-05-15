@@ -6,6 +6,11 @@
 
 * [Credit Vaults](product/credit-vaults/README.md)
   * [Tranching](product/credit-vaults/tranching.md)
+  * [Live vaults](product/credit-vaults/live-vaults.md)
+* [USP](product/usp/README.md)
+  * [Allocation](product/usp/allocation.md)
+  * [Risks](product/usp/risks.md)
+  * [FAQs](product/usp/faqs.md)
 * [Users](product/users/README.md)
   * [Lenders](product/users/lenders/README.md)
     * [Verification](product/users/lenders/verification.md)
@@ -19,7 +24,9 @@
 ## Developers
 
 * [Addresses](<README (1).md>)
-  * [Product](developers/addresses/product.md)
+  * [Product](developers/addresses/product/README.md)
+    * [Credit Vaults](developers/addresses/product/credit-vaults.md)
+    * [USP](developers/addresses/product/usp.md)
   * [Governance](developers/addresses/governance.md)
 * [Integrators](developers/integrators.md)
 * [API](developers/api/README.md)

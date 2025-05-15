@@ -26,7 +26,7 @@ At the end of the following cycle (Cycle II), the borrower repays interest and a
 
 Upon completion of steps 1, and 2
 
-* The user’s wallet will reflect a reduction in the [Credit Vault LP tokens](../../../../developers/addresses/product.md) representing his position in the pool
+* The user’s wallet will reflect a reduction in the [Credit Vault LP tokens](../../../../developers/addresses/product/credit-vaults.md) representing his position in the pool
 * The user will need to claim his stablecoins representing his initial deposit, plus any interest generated after the new lending cycle starts
 
 {% hint style="success" %}

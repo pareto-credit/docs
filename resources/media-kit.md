@@ -32,6 +32,24 @@ As the financial landscape evolves, Pareto aims to set a new standard for instit
 
 </details>
 
+## About USP
+
+<details>
+
+<summary>Tagline</summary>
+
+USP is a credit-backed synthetic dollar.
+
+</details>
+
+<details>
+
+<summary>Short description</summary>
+
+USP is a synthetic dollar protocol backed by real-world institutional-grade private credit, alongside a globally accessible savings asset, sUSP.
+
+</details>
+
 ## Brand assets
 
 ### Logos
@@ -40,7 +58,7 @@ Pareto's logo visually represents the core principles of liquidity flow, financi
 
 <figure><img src="../.gitbook/assets/Docs_logos_preview (1).png" alt=""><figcaption></figcaption></figure>
 
-{% file src="../.gitbook/assets/Pareto's logo (1).zip" %}
+{% file src="../.gitbook/assets/Pareto_brand_assets.zip" %}
 
 ### Typography
 

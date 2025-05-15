@@ -36,7 +36,7 @@ Note: Verified credentials aren't shared across all vaults on Pareto. New creden
 
 Before depositing, users are required to sign two agreements:
 
-1. Terms and Conditions (T\&C) that govern interaction with Pareto
+1. [Terms of Service (ToS)](https://pareto.credit/terms-of-service/) that govern interaction with Pareto
 2. Master Loan Agreement (MLA) that governs the lending relationship between the liquidity provider and the borrower (e.g., Fasanara Digital)
 
 These contracts are signed on-chain, linking a unique ID to the user’s address via e-signature. The contract signature requires the execution of a transaction from the verified wallet. Users will be prompted to sign an on-chain message to complete this step.

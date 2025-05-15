@@ -119,7 +119,7 @@ Submit the signed hash:
 Retrieve the wallet position to track users' deposits, claims, and balances.
 
 ```ts
-GET /v1/vault/position?walletAddress={walletAddress}
+GET /v1/vaults/{vaultId}/position?walletAddress={walletAddress}
 ```
 {% endstep %}
 {% endstepper %}

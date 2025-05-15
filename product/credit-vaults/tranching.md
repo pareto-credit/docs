@@ -49,7 +49,7 @@ $$\text{APY}_{Sr} = \text{Base APY} \times \text{Yield share}_{Sr} \qquad \tag{1
 
 where the _Base APY_ is the underlying Tranches yield and the _Yield share_ of the Senior side is a piecewise function conditional to the liquidity on the Senior tranche.
 
-$$\text{Yield share}_{Sr} =      \begin{dcases}         99\% & \text{if } \text{TVL ratio}_{Sr} \geq 99\%  \\         \\          \dfrac{\text{Liquidity}_{Senior}}{\text{Liquidity}_{Senior + Junior}} & \text{if } \text{TVL ratio}_{Sr} > 50\%  \\         \\         50\% & \text{if } \text{TVL ratio}_{Sr} \leq 50\%  \\     \end{dcases}$$
+$$\text{Yield share}_{Sr} =  \begin{dcases}  99\% & \text{if } \text{TVL ratio}_{Sr} \geq 99\%  \\         \\          \dfrac{\text{Liquidity}_{Senior}}{\text{Liquidity}_{Senior + Junior}} & \text{if } \text{TVL ratio}_{Sr} > 50\%  \\         \\         50\% & \text{if } \text{TVL ratio}_{Sr} \leq 50\%  \\     \end{dcases}$$
 
 The Junior return can be calculated as
 
@@ -104,7 +104,7 @@ The Senior Yield share is equal to 80%. Senior funds coverage is 25% and the Jun
 
 #### **Hedge case #1**
 
-Majority of the total vault's liquidity lies on the Senior side (≥99%). See the [#formulae](tranching.md#formulae "mention") section.&#x20;
+Majority of the total vault's liquidity lies on the Senior side (≥ 99%). See the [#formulae](tranching.md#formulae "mention") section.&#x20;
 
 | Side   | Liquidity     | Expected APY |
 | ------ | ------------- | ------------ |
@@ -115,7 +115,7 @@ The Senior Yield share is set to 99% (HC#1). Senior funds coverage is 0% and the
 
 #### **Hedge case #2**
 
-Less than half of the total vault's liquidity lies on the Senior side (≤50%). See the [#formulae](tranching.md#formulae "mention") section.&#x20;
+Less than half of the total vault's liquidity lies on the Senior side (≤ 50%). See the [#formulae](tranching.md#formulae "mention") section.&#x20;
 
 | Side    | Liquidity     | Expected APY |
 | ------- | ------------- | ------------ |

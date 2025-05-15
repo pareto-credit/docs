@@ -1,12 +1,16 @@
-# Product
+# Credit Vaults
 
-For each vault deployed, the underling token, main contract, strategy, LP token, and queue contract, if available, are listed. The ABI of the Credit Vault contracts can be found here: [JSON](https://github.com/Idle-Labs/idle-tranches/blob/master/abi/IdleCDOEpochVariant.json)
+For each vault deployed, the underlying token, main contract, strategy, LP token, and queue contract, if available, are listed. The ABI of the Credit Vault contracts can be found here: [JSON](https://github.com/Idle-Labs/idle-tranches/blob/master/abi/IdleCDOEpochVariant.json)
 
 ## Ethereum
 
 ### Fasanara Digital
 
 <table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDC</td><td><a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</a></td></tr><tr><td>Contract</td><td><a href="https://etherscan.io/address/0xf6223C567F21E33e859ED7A045773526E9E3c2D5">0xf6223C567F21E33e859ED7A045773526E9E3c2D5</a></td></tr><tr><td>Strategy</td><td><a href="https://etherscan.io/address/0xC35D078092872Ec1f2ae82bcd6f0b6b89F0850de">0xC35D078092872Ec1f2ae82bcd6f0b6b89F0850de</a></td></tr><tr><td>LP token</td><td><a href="https://etherscan.io/address/0x45054c6753b4bce40c5d54418dabc20b070f85be">0x45054c6753b4Bce40C5d54418DabC20b070F85bE</a></td></tr><tr><td>Queue</td><td><a href="https://etherscan.io/address/0x0b4F695B05902efc14344d19ED1d0B0E061C8A3E">0x0b4F695B05902efc14344d19ED1d0B0E061C8A3E</a></td></tr></tbody></table>
+
+### Bastion Trading
+
+<table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDC</td><td><a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</a></td></tr><tr><td>Contract</td><td><a href="https://etherscan.io/address/0x4462eD748B8F7985A4aC6b538Dfc105Fce2dD165">0x4462eD748B8F7985A4aC6b538Dfc105Fce2dD165</a></td></tr><tr><td>Strategy</td><td><a href="https://etherscan.io/address/0x06975bB418EFFB0029fe278A6fA15B92bb97496F">0x06975bB418EFFB0029fe278A6fA15B92bb97496F</a></td></tr><tr><td>LP token</td><td><a href="https://etherscan.io/address/0xC49b4ECc14aa31Ef0AD077EdcF53faB4201b724c">0xC49b4ECc14aa31Ef0AD077EdcF53faB4201b724c</a></td></tr></tbody></table>
 
 ## Optimism
 
