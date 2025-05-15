@@ -20,10 +20,9 @@ The [allocation](allocation.md) of funds for each credit vault is determined by 
 
 USP offers the following benefits:
 
-* **Composable**: Transferable, permissionless, and can seamlessly be integrated into DeFi and CeFi for enhanced efficiency.
-
-- **Overcollateralized**: Backed 1:1, USP is fully collateralized by stablecoins. A robust collateral controller is in place to maintain [peg stability](./#peg-stability-mechanism), ensuring security and reliability for all users.
-- **Secure**: Although backed by solid, liquid assets, USP is also protected by a stability fund, funded by protocol revenue, to shield holders in a systemic crisis.
+* **Composable**: USP is a transferable, permissionless asset that integrates across DeFi and CeFi, streamlining capital deployment, risk management, and settlements
+* **Capital efficient**: Minted 1:1 against major stablecoins, USP is deployed into a diversified portfolio of liquid, short- and long-term credit, balancing liquidity and yield
+* **Protected**: USP holds senior priority in the capital stack and is shielded by a [peg stability reserve](./#peg-stability-mechanism) that provides an additional buffer against defaults and market stress
 
 </details>
 
@@ -33,9 +32,9 @@ USP offers the following benefits:
 
 The acquisition of USP happens either through the USP contract or in a permissionless way through AMM pools. Users can:
 
-* **Acquire USP permissionlessly** using external AMM pools with assets such as USDT or USDC.
-* **Mint USP directly** by depositing stablecoins (USDC, USDS)_,_ subject to clearing users' verification checks.
-* **Redeem USP directly** by burning the token and receiving backing asset&#x73;_,_ subject to clearing users' verification checks.
+* **Acquire USP permissionlessly** using external AMM pools with assets such as USDT or USDC
+* **Mint USP directly** by depositing stablecoins (USDC, USDS)_,_ subject to clearing users' verification checks
+* **Redeem USP directly** by burning the token and receiving backing asset&#x73;_,_ subject to clearing users' verification checks
 
 </details>
 
@@ -49,9 +48,9 @@ Once USP is staked into SUSP, users can earn yield from the interest generated b
 
 sUSP offers the following benefits:
 
-* **Yield distribution**: sUSP lets users benefit from Credit Vaults yield and Pareto’s growth for a rewarding experience.
-* **Liquid**: sUSP is fully liquid and transferable, allowing holders to exit their positions at any time by swapping it for other assets.
-* **Diversified**: sUSP holders get instant exposure to a diversified basket of credit lines minimising the reliance on one single counterparty
+* **Yield generating**: sUSP, designed for stable, risk-adjusted returns, allows users to earn yield from Credit Vaults and participate in Pareto’s long-term growth
+* **Liquid**: sUSP is fully liquid and non-custodial. Holders can exit at any time by simply unstaking, without lockups or withdrawal restrictions
+* **Diversified**: sUSP provides exposure to a broad set of credit lines reducing single-counterparty risk through structured diversification
 
 </details>
 
