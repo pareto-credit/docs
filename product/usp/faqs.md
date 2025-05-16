@@ -102,6 +102,16 @@ Non-verified users cannot mint or redeem USP but can still access USP through se
 
 <details>
 
+<summary>How does USP manage redemptions?</summary>
+
+Redemptions happen instantly via secondary markets or by burning the token on Pareto.
+
+For sUSP, there’s a 7-day cooldown period, then a 1 to 30-day wait depending on CVs maturity since redemptions align with Credit Vault cycle lengths.
+
+</details>
+
+<details>
+
 <summary>How can I earn with USP?</summary>
 
 Users can earn yield by staking USP into the SUSP vault, Pareto’s yield-bearing layer for credit-backed dollars. Here’s how it works:
