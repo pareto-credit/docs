@@ -91,13 +91,6 @@ def rebalance():
 
 </details>
 
-### Stress-test checklist
-
-* [ ] &#x20;Double worst redemption day, verify T1 ≥ demand
-* [ ] 30-day Monte-Carlo (jump-diffusion redemptions)
-* [ ] Confirm T1 + laddered T2 ≥ 99 % simulations without gating
-* [ ] Check portfolio credit-VaR vs limits
-
 ### Initial parameters
 
 The USP board can modify the allocation parameters. The default values are:
