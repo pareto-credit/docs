@@ -12,6 +12,10 @@ For each vault deployed, the underlying token, main contract, strategy, LP token
 
 <table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDC</td><td><a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</a></td></tr><tr><td>Contract</td><td><a href="https://etherscan.io/address/0x4462eD748B8F7985A4aC6b538Dfc105Fce2dD165">0x4462eD748B8F7985A4aC6b538Dfc105Fce2dD165</a></td></tr><tr><td>Strategy</td><td><a href="https://etherscan.io/address/0x06975bB418EFFB0029fe278A6fA15B92bb97496F">0x06975bB418EFFB0029fe278A6fA15B92bb97496F</a></td></tr><tr><td>LP token</td><td><a href="https://etherscan.io/address/0xC49b4ECc14aa31Ef0AD077EdcF53faB4201b724c">0xC49b4ECc14aa31Ef0AD077EdcF53faB4201b724c</a></td></tr></tbody></table>
 
+### Adaptive Frontier
+
+<table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDC</td><td><a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</a></td></tr><tr><td>Contract</td><td><a href="https://etherscan.io/address/0x14B8E918848349D1e71e806a52c13D4e0d3246E0">0x14B8E918848349D1e71e806a52c13D4e0d3246E0</a></td></tr><tr><td>Strategy</td><td><a href="https://etherscan.io/address/0xa30bE796FB2BAbF9228359E86A041c14e29f86Fc">0xa30bE796FB2BAbF9228359E86A041c14e29f86Fc</a></td></tr><tr><td>LP token</td><td><a href="https://etherscan.io/address/0xae7913c672c7F1f76C2a1a0Ac4de97d082681234">0xae7913c672c7F1f76C2a1a0Ac4de97d082681234</a></td></tr><tr><td>Queue</td><td><a href="https://etherscan.io/address/0x5eCF8bF9eae51c2FF47FAc8808252FaCd8e36797">0x5eCF8bF9eae51c2FF47FAc8808252FaCd8e36797</a></td></tr></tbody></table>
+
 ## Optimism
 
 ### FalconX
