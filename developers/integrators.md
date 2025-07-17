@@ -240,7 +240,24 @@ await withdrawQueueContract.methods
 
 ## Managing requests
 
-All deposit requests (during the `RUNNING` state), and all withdrawals (instant or standard) are tracked under the `requests` array of the `vaultBlock` object. Each entry in this array represents a user-initiated interaction awaiting processing.
+There are 3 types of request:&#x20;
+
+* `DEPOSIT`: available during the  `RUNNING` state of the vault cycle
+* `WITHDRAW`: available during the `RUNNING` state of the vault cycle. This request can be "standard" or "instant" depending on the next cycle APR.
+* `REDEEM`: available during the `WAITING` state of the vault cycle. This request can be "standard" or "instant" depending on the next cycle APR.
+
+All requests must be claimed by users after they have been processed:&#x20;
+
+* `DEPOSIT`: this request can be claimed starting from the next `WAITING` period
+* `WITHDRAW`:&#x20;
+  * if **standard**: the request can be claimed at the end of the next cycle, during the `WAITING` period
+  * if **instant**: the request can be claimed during the `RUNNING` period of the next cycle, after the instant withdrawal delay (usually few days).
+* `REDEEM`:
+  * if **standard**: the request can be claimed at the end of the next cycle, during the `WAITING` period
+  * if **instant**: the request can be claimed during the `RUNNING` period of the next cycle, after the instant withdrawal delay (usually few days).
+
+\
+All  vault requests are tracked in the `requests` array of the `vaultBlock` object. Each entry in this array represents a user-initiated interaction awaiting processing.
 
 {% code title="Request schema" %}
 ```ts
@@ -269,6 +286,7 @@ where
 * `status`: Tracks the lifecycle of the request (e.g., `PENDING`, `CLAIMABLE`, etc.).
 * `isInstant`: Only present for withdrawals that qualify as "instant".
 * `block`: Indicates the vault block in which the request was recorded.
+* `epochNumber` : the epochNumber that must be passed to the requests methods
 
 Requests are retrieved from the latest vault block:
 
@@ -300,7 +318,7 @@ await depositQueueContract.methods
 
 Handled via the queue contract `vault.cdoEpoch.withdrawQueue`
 
-* It's possible to claim the request if  `status === 'CLAIMED'`
+* For both standard and instant requests, it's possible to claim the request if  `status === 'CLAIMED'`
 
 ```ts
 await withdrawQueueContract.methods
@@ -334,4 +352,15 @@ await cdoEpochContract.methods
 await cdoEpochContract.methods
   .claimInstantWithdrawRequest(request.epochNumber)
   .send({ from: walletAddress });
+
 ```
+
+## Requests lifecycle summary&#x20;
+
+| Request type        | When     | Claimable From                                         |
+| ------------------- | -------- | ------------------------------------------------------ |
+| DEPOSIT             | RUNNING  | Next WAITING period                                    |
+| WITHDRAW (standard) | RUNNING  | End of next cycle (WAITING)                            |
+| WITHDRAW (instant)  | RUNNING  | RUNNING of next cycle (after instant withdrawal delay) |
+| REDEEM (standard)   | WAITING  | End of next cycle (WAITING)                            |
+| REDEEM (instant)    | WAITING  | RUNNING of next cycle (after instant withdrawal delay) |
