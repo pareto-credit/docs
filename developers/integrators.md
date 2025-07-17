@@ -278,39 +278,21 @@ GET /v1/vault-latest-block?vaultId={vaultId}
 
 ### Deposit requests
 
-* Cancel the request if `status === 'PENDING'`
+Handled via the queue contract `vault.cdoEpoch.depositQueue`
+
+* It's possible to claim the request if `status === 'CLAIMED'`
 
 ```ts
-await cdoEpochContract.methods
-  .deleteRequest(request.epochNumber)
-  .send({ from: walletAddress });
-```
-
-* Claim the request if `status === 'CLAIMED'`
-
-```ts
-await cdoEpochContract.methods
+await depositQueueContract.methods
   .claimDepositRequest(request.epochNumber)
   .send({ from: walletAddress });
 ```
 
-### Redeem requests
-
-Handled via the main vault contract `vault.cdoEpoch`
-
-* If `status === 'CLAIMED'`:
+* It's possible to cancel the request if `status === 'PENDING'`
 
 ```ts
-await cdoEpochContract.methods
-  .claimWithdrawRequest(request.epochNumber)
-  .send({ from: walletAddress });
-```
-
-* If `request.isInstant === true`:
-
-```ts
-await cdoEpochContract.methods
-  .claimInstantWithdrawRequest(request.epochNumber)
+await depositQueueContract.methods
+  .deleteRequest(request.epochNumber)
   .send({ from: walletAddress });
 ```
 
@@ -318,10 +300,38 @@ await cdoEpochContract.methods
 
 Handled via the queue contract `vault.cdoEpoch.withdrawQueue`
 
-* If `status === 'CLAIMED'`
+* It's possible to claim the request if  `status === 'CLAIMED'`
 
 ```ts
 await withdrawQueueContract.methods
   .claimWithdrawRequest(request.epochNumber)
+  .send({ from: walletAddress });
+```
+
+* It's possible to cancel the request if `status === 'PENDING'`
+
+```ts
+await withdrawQueueContract.methods
+  .deleteWithdrawRequest(request.epochNumber)
+  .send({ from: walletAddress });
+```
+
+### Redeem requests
+
+Handled via the main vault contract `vault.cdoEpoch`
+
+* It's possible to claim the request if `status === 'CLAIMED'`:
+
+```ts
+await cdoEpochContract.methods
+  .claimWithdrawRequest(request.epochNumber)
+  .send({ from: walletAddress });
+```
+
+* If `request.isInstant === true`  it's possible to use:
+
+```ts
+await cdoEpochContract.methods
+  .claimInstantWithdrawRequest(request.epochNumber)
   .send({ from: walletAddress });
 ```
