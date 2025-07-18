@@ -355,7 +355,7 @@ await cdoEpochContract.methods
 
 ```
 
-## Requests lifecycle summary&#x20;
+### Lifecycle summary&#x20;
 
 | Request type        | When     | Claimable From                                         |
 | ------------------- | -------- | ------------------------------------------------------ |
