@@ -342,7 +342,7 @@ Handled via the main vault contract `vault.cdoEpoch`
 
 ```ts
 await cdoEpochContract.methods
-  .claimWithdrawRequest(request.epochNumber)
+  .claimWithdrawRequest()
   .send({ from: walletAddress });
 ```
 
@@ -350,9 +350,8 @@ await cdoEpochContract.methods
 
 ```ts
 await cdoEpochContract.methods
-  .claimInstantWithdrawRequest(request.epochNumber)
+  .claimInstantWithdrawRequest()
   .send({ from: walletAddress });
-
 ```
 
 ### Lifecycle summary&#x20;
