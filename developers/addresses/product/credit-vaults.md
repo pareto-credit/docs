@@ -20,6 +20,10 @@ For each vault deployed, the underlying token, main contract, strategy, LP token
 
 <table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDC</td><td><a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</a></td></tr><tr><td>Contract</td><td><a href="https://etherscan.io/address/0x433D5B175148dA32Ffe1e1A37a939E1b7e79be4d">0x433D5B175148dA32Ffe1e1A37a939E1b7e79be4d</a></td></tr><tr><td>Strategy</td><td><a href="http://etherscan.io/address/0x17E9Ab2992dfecBe779a06A92a6cDB9fE6aEeEf3">0x17E9Ab2992dfecBe779a06A92a6cDB9fE6aEeEf3</a></td></tr><tr><td>LP token</td><td><a href="http://etherscan.io/address/0xC26A6Fa2C37b38E549a4a1807543801Db684f99C">0xC26A6Fa2C37b38E549a4a1807543801Db684f99C</a></td></tr><tr><td>Queue</td><td><a href="http://etherscan.io/address/0x5cC24f44cCAa80DD2c079156753fc1e908F495DC">0x5cC24f44cCAa80DD2c079156753fc1e908F495DC</a></td></tr></tbody></table>
 
+### RockawayX
+
+<table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDC</td><td><a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</a></td></tr><tr><td>Contract</td><td><a href="https://etherscan.io/address/0x9cF358aff79DeA96070A85F00c0AC79569970Ec3">0x9cF358aff79DeA96070A85F00c0AC79569970Ec3</a></td></tr><tr><td>Strategy</td><td><a href="https://etherscan.io/address/0x3Fc0265E92EeafED0cCd9F8621764Ce0981882cE">0x3Fc0265E92EeafED0cCd9F8621764Ce0981882cE</a></td></tr><tr><td>LP token</td><td><a href="https://etherscan.io/token/0xEC6a70F62a83418c7fb238182eD2865F80491a8B">0xEC6a70F62a83418c7fb238182eD2865F80491a8B</a></td></tr><tr><td>Queue</td><td><a href="https://etherscan.io/address/0xBC6cffAFC8F98d7DF780cE05fA55e14781C1C14D">0xBC6cffAFC8F98d7DF780cE05fA55e14781C1C14D</a></td></tr></tbody></table>
+
 ## Optimism
 
 ### FalconX
