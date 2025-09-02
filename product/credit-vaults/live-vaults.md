@@ -31,3 +31,20 @@
 <table><thead><tr><th width="214.625">Borrower</th><th>Adaptive Frontier</th></tr></thead><tbody><tr><td>Curator</td><td>Pareto</td></tr><tr><td>Vertical</td><td>HFT Trading</td></tr><tr><td>IRM</td><td>Fixed rate</td></tr><tr><td>Chain</td><td>Ethereum</td></tr><tr><td>Asset</td><td>USDC</td></tr><tr><td>Cycle length</td><td>One week</td></tr><tr><td>Buffer length</td><td>24 hours</td></tr><tr><td>Redemptions</td><td>Weekly, 7-day notice</td></tr><tr><td>Early exit</td><td>Enabled (<span class="math">\Delta \geq 1</span>)</td></tr><tr><td>Performance fee</td><td>10%</td></tr><tr><td>Vault page</td><td><a href="https://app.pareto.credit/vault#0xae7913c672c7F1f76C2a1a0Ac4de97d082681234">Link</a></td></tr><tr><td>Addresses</td><td><a href="../../developers/addresses/product/credit-vaults.md#adaptive-frontier">Link</a></td></tr></tbody></table>
 
 </details>
+
+<details>
+
+<summary><a href="https://www.rockawayx.com/">RockawayX</a></summary>
+
+<table><thead><tr><th width="214.625">Borrower</th><th>RockawayX</th></tr></thead><tbody><tr><td>Curator</td><td>Pareto</td></tr><tr><td>Vertical</td><td>Private Credit &#x26; DeFi Liquidity</td></tr><tr><td>IRM</td><td>Fixed rate</td></tr><tr><td>Chain</td><td>Ethereum</td></tr><tr><td>Asset</td><td>USDC</td></tr><tr><td>Cycle length</td><td>One month</td></tr><tr><td>Buffer length</td><td>6 hours</td></tr><tr><td>Redemptions</td><td>Monthly, 31-day notice</td></tr><tr><td>Early exit</td><td>Enabled (<span class="math">\Delta \geq 1</span>)</td></tr><tr><td>Performance fee</td><td>10%</td></tr><tr><td>Vault page</td><td><a href="https://app.pareto.credit/vault#0xae7913c672c7F1f76C2a1a0Ac4de97d082681234">Link</a></td></tr><tr><td>Addresses</td><td><a href="../../developers/addresses/product/credit-vaults.md#rockawayx">Link</a></td></tr></tbody></table>
+
+</details>
+
+<details>
+
+<summary><a href="https://www.abraxascm.com/">Abraxas Capital Management</a></summary>
+
+<table><thead><tr><th width="214.625">Borrower</th><th>Heka Elysium Alpha Bitcoin</th></tr></thead><tbody><tr><td>Curator</td><td>Pareto</td></tr><tr><td>Vertical</td><td>Cross-market Arbitrage</td></tr><tr><td>IRM</td><td>Fixed rate</td></tr><tr><td>Chain</td><td>Ethereum</td></tr><tr><td>Asset</td><td>USDC</td></tr><tr><td>Cycle length</td><td>One week</td></tr><tr><td>Buffer length</td><td>6 hours</td></tr><tr><td>Redemptions</td><td>Weekly, 7-day notice</td></tr><tr><td>Early exit</td><td>Enabled (<span class="math">\Delta \geq 1</span>)</td></tr><tr><td>Performance fee</td><td>10%</td></tr><tr><td>Vault page</td><td><a href="https://app.pareto.credit/vault#0x6dbDEeF7a188bEaFFC2c57006e5D8edAf0C0e9e6">Link</a></td></tr><tr><td>Addresses</td><td><a href="../../developers/addresses/product/credit-vaults.md#abraxas-capital-management">Link</a></td></tr></tbody></table>
+
+</details>
+
