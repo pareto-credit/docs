@@ -1,5 +1,7 @@
 ---
 description: USP Manager Dashboard Guide
+hidden: true
+noIndex: true
 ---
 
 # Curator
