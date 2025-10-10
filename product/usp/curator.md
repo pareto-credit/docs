@@ -26,7 +26,7 @@ Once connected, you’ll gain access to the full USP dashboard divided into thre
 
 ***
 
-### 📊 Dashboard Overview
+### Dashboard Overview
 
 #### **Overview Tab**
 
