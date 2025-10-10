@@ -11,6 +11,7 @@
   * [Allocation](product/usp/allocation.md)
   * [Risks](product/usp/risks.md)
   * [FAQs](product/usp/faqs.md)
+  * [Curator](product/usp/curator.md)
 * [Users](product/users/README.md)
   * [Lenders](product/users/lenders/README.md)
     * [Verification](product/users/lenders/verification.md)

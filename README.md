@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Overview
 
 <figure><img src=".gitbook/assets/Docs_cover_green.png" alt=""><figcaption></figcaption></figure>
