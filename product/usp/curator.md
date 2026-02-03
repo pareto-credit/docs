@@ -44,8 +44,7 @@ At the top of the page, three interactive **cards** summarize current actions:
 * **Withdrawal Requests** → Pending withdrawals to be processed.
 * **Gain/Losses** → Adjustments to be applied periodically.
 
-Each card displays the total amount involved and highlights whether an action is required.\
-
+Each card displays the total amount involved and highlights whether an action is required.<br>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-10-10 alle 12.28.10.png" alt=""><figcaption></figcaption></figure>
 
@@ -72,8 +71,7 @@ It includes several charts:
 * **Yield Sources** → Allocation breakdown among all active credit vaults and liquidity pools.
 * **USP TVL Breakdown** → Historical trend of USP total value locked.
 * **sUSP TVL** → Tracks the total amount of staked USP over time.
-* **sUSP APY** → Displays the real-time and historical staking APY evolution.\
-
+* **sUSP APY** → Displays the real-time and historical staking APY evolution.<br>
 
 <figure><img src="../../.gitbook/assets/Pareto-Institutional-dashboard-10-10-2025_10_18_AM.png" alt=""><figcaption></figcaption></figure>
 

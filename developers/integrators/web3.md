@@ -1,4 +1,4 @@
-# Integrators
+# Web3
 
 This guide describes how to integrate Credit Vaults into Web3 applications using both the Pareto REST API and smart contracts. It is intended for technical audiences familiar with Web3 and frontend frameworks.
 
@@ -14,7 +14,7 @@ This pattern is required for calling methods such as `depositAA`, `requestWithdr
 
 ## API access
 
-All API routes below belong to the public Pareto API at `https://api.pareto.credit`. Refer to the [API chapter](api/) for a complete overview.
+All API routes below belong to the public Pareto API at `https://api.pareto.credit`. Refer to the [API chapter](../api/) for a complete overview.
 
 ### 1. Required vault data
 

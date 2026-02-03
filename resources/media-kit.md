@@ -58,7 +58,7 @@ Pareto's logo visually represents the core principles of liquidity flow, financi
 
 <figure><img src="../.gitbook/assets/Docs_logos_preview (1).png" alt=""><figcaption></figcaption></figure>
 
-{% file src="../.gitbook/assets/Pareto_brand_assets.zip" %}
+{% file src="../.gitbook/assets/Pareto_brand_assets (1).zip" %}
 
 ### Typography
 
