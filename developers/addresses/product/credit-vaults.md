@@ -24,24 +24,24 @@ For each vault deployed, the underlying token, main contract, strategy, LP token
 
 <table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDC</td><td><a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</a></td></tr><tr><td>Contract</td><td><a href="https://etherscan.io/address/0x9cF358aff79DeA96070A85F00c0AC79569970Ec3">0x9cF358aff79DeA96070A85F00c0AC79569970Ec3</a></td></tr><tr><td>Strategy</td><td><a href="https://etherscan.io/address/0x3Fc0265E92EeafED0cCd9F8621764Ce0981882cE">0x3Fc0265E92EeafED0cCd9F8621764Ce0981882cE</a></td></tr><tr><td>LP token</td><td><a href="https://etherscan.io/token/0xEC6a70F62a83418c7fb238182eD2865F80491a8B">0xEC6a70F62a83418c7fb238182eD2865F80491a8B</a></td></tr><tr><td>Queue</td><td><a href="https://etherscan.io/address/0xBC6cffAFC8F98d7DF780cE05fA55e14781C1C14D">0xBC6cffAFC8F98d7DF780cE05fA55e14781C1C14D</a></td></tr></tbody></table>
 
-### Abraxas Capital Management
+### Abraxas Capital Management \[DEPRECATED]
 
 <table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDC</td><td><a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</a></td></tr><tr><td>Contract</td><td><a href="https://etherscan.io/address/0x0Ad21c3Ac4ffE7C1Ed2b1B717cd051DeD365fa32">0x6dbDEeF7a188bEaFFC2c57006e5D8edAf0C0e9e6</a></td></tr><tr><td>Strategy</td><td><a href="https://etherscan.io/address/0xE7E13F902Ea13e6EaAa4ed9A2DE5898436D12cbF">0xE7E13F902Ea13e6EaAa4ed9A2DE5898436D12cbF</a></td></tr><tr><td>LP token</td><td><a href="https://etherscan.io/token/0x6dbDEeF7a188bEaFFC2c57006e5D8edAf0C0e9e6">0x6dbDEeF7a188bEaFFC2c57006e5D8edAf0C0e9e6</a></td></tr><tr><td>Queue</td><td><a href="https://etherscan.io/address/0xeBa43518e4fddA8D82Ad711DA3b27717779DBdF7">0xeBa43518e4fddA8D82Ad711DA3b27717779DBdF7</a></td></tr></tbody></table>
 
 ## Optimism
 
-### FalconX
+### FalconX \[DEPRECATED]
 
 <table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDC</td><td><a href="https://optimistic.etherscan.io/token/0x0b2c639c533813f4aa9d7837caf62653d097ff85">0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85</a></td></tr><tr><td>Contract</td><td><a href="https://optimistic.etherscan.io/address/0xD2c0D848aA5AD1a4C12bE89e713E70B73211989B">0xD2c0D848aA5AD1a4C12bE89e713E70B73211989B</a></td></tr><tr><td>Strategy</td><td><a href="https://optimistic.etherscan.io/address/0x2BCf124aa4f7F32f0fe54f498d924B934C942B31">0x2BCf124aa4f7F32f0fe54f498d924B934C942B31</a></td></tr><tr><td>LP token</td><td><a href="https://optimistic.etherscan.io/address/0x24e16f9fad32891f8ba69ce8fedd273a2649331a">0x24e16F9Fad32891f8bA69cE8fEdd273A2649331A</a></td></tr><tr><td>Queue</td><td><a href="https://optimistic.etherscan.io/address/0x463465c334742D72907CA5fB97db44688B4EC3dC">0x463465c334742D72907CA5fB97db44688B4EC3dC</a></td></tr></tbody></table>
 
 ## Arbitrum
 
-### Bastion Trading
+### Bastion Trading \[DEPRECATED]
 
 <table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDT</td><td><a href="https://arbiscan.io/token/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9">0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9</a></td></tr><tr><td>Contract</td><td><a href="https://arbiscan.io/address/0x3919396Cd445b03E6Bb62995A7a4CB2AC544245D">0x3919396Cd445b03E6Bb62995A7a4CB2AC544245D</a></td></tr><tr><td>Strategy</td><td><a href="https://arbiscan.io/address/0x5b11507f8a91005ad1591f54ef64133aaba6d06e">0x5b11507F8A91005aD1591F54ef64133AabA6d06E</a></td></tr><tr><td>LP token</td><td><a href="https://arbiscan.io/address/0x97f476f664a95106931f78113489e0361cf1c9fa">0x97F476F664A95106931f78113489e0361Cf1c9Fa</a></td></tr><tr><td>Queue</td><td><a href="https://arbiscan.io/address/0x133F1C751f25C2AAf0E83f0609A67074915144A4">0x133F1C751f25C2AAf0E83f0609A67074915144A4</a></td></tr></tbody></table>
 
 ## Polygon
 
-### Bastion Trading
+### Bastion Trading \[DEPRECATED]
 
 <table data-full-width="false"><thead><tr><th width="189">Description</th><th>Address</th></tr></thead><tbody><tr><td>Token USDT</td><td><a href="https://polygonscan.com/address/0xc2132d05d31c914a87c6611c10748aeb04b58e8f">0xc2132d05d31c914a87c6611c10748aeb04b58e8f</a></td></tr><tr><td>Contract</td><td><a href="https://polygonscan.com/address/0xF9E2AE779a7d25cDe46FccC41a27B8A4381d4e52">0xF9E2AE779a7d25cDe46FccC41a27B8A4381d4e52</a></td></tr><tr><td>Strategy</td><td><a href="https://polygonscan.com/address/0x4Ddb301403Ee3C4B4099ED128b34c36d86f6df35">0x4Ddb301403Ee3C4B4099ED128b34c36d86f6df35</a></td></tr><tr><td>LP token</td><td><a href="https://polygonscan.com/address/0xaE65d6C295E4a28519182a632FB25b7C1966AED7">0xaE65d6C295E4a28519182a632FB25b7C1966AED7</a></td></tr><tr><td>Queue</td><td><a href="https://polygonscan.com/address/0xeAB324e9450d1EfFa087ccE8eff6C1FB476d60Ff">0xeAB324e9450d1EfFa087ccE8eff6C1FB476d60Ff</a></td></tr></tbody></table>
