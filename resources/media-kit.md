@@ -8,7 +8,7 @@ Pareto brand guidelines provide logos, icons, and descriptions about the brand.
 
 <summary>Tagline</summary>
 
-Pareto is an on-chain private credit marketplace.&#x20;
+A private credit marketplace for institutional borrowers and lenders.
 
 </details>
 
@@ -16,7 +16,7 @@ Pareto is an on-chain private credit marketplace.&#x20;
 
 <summary>Short description</summary>
 
-Pareto is a private credit marketplace that connects institutional lenders and borrowers, providing scalable, yield-generating opportunities and bridging institutional capital on-chain.
+Pareto is a private credit marketplace that connects institutional lenders and borrowers, providing scalable, yield-generating opportunities.
 
 </details>
 
@@ -24,11 +24,9 @@ Pareto is a private credit marketplace that connects institutional lenders and b
 
 <summary>Boilerplate description</summary>
 
-Pareto is a private credit marketplace that connects institutional lenders and borrowers, providing scalable, yield-generating opportunities and bridging institutional capital on-chain.
+Pareto is a private credit marketplace that connects institutional lenders and borrowers, providing scalable, yield-generating opportunities and enabling institutional capital to move onchain.
 
-Tailored for asset managers, digital asset funds, and other professional investors, Pareto offers seamless access to regulatory-compliant alternative credit products. Its infrastructure emphasizes transparency, automation, and flexibility. Credit Vaults are the core primitive: they eliminate utilization-based inefficiencies, reduce operational overhead, and improve capital efficiency for both lenders and borrowers.
-
-As the financial landscape evolves, Pareto aims to set a new standard for institutional credit with fully automated, data-driven lending solutions.
+Tailored for asset managers, digital asset funds, fintechs, and other professional investors, Pareto offers seamless access to regulatory-compliant alternative credit products, alongside whitelabel infrastructure that enables partners to launch branded credit products onchain.
 
 </details>
 
@@ -56,13 +54,13 @@ USP is a synthetic dollar protocol backed by real-world institutional-grade priv
 
 Pareto's logo visually represents the core principles of liquidity flow, financial connectivity, and cyclical capital movement, emphasizing the Pareto 80/20 principle.
 
-<figure><img src="../.gitbook/assets/Docs_logos_preview (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Pareto_logo_-_overview.png" alt=""><figcaption></figcaption></figure>
 
-{% file src="../.gitbook/assets/Pareto_brand_assets (1).zip" %}
+{% file src="../.gitbook/assets/Pareto_brand_assets (2).zip" %}
 
 ### Typography
 
-Primary font: [GT Sectra](https://www.grillitype.com/typeface/gt-sectra)
+Primary font: [Inter](https://fonts.google.com/specimen/Inter)
 
 Secondary font: [GT America Mono](https://www.grillitype.com/typeface/gt-america)
 
@@ -74,4 +72,4 @@ Secondary font: [GT America Mono](https://www.grillitype.com/typeface/gt-america
 
 #### Secondary colors
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>#70B19E</td><td><a href="../.gitbook/assets/Docs_colours_green_v2.png">Docs_colours_green_v2.png</a></td></tr><tr><td>#48685A</td><td><a href="../.gitbook/assets/Docs_colours_green_v3.png">Docs_colours_green_v3.png</a></td></tr><tr><td>#D7E4EA</td><td><a href="../.gitbook/assets/Docs_colours_light_blue.png">Docs_colours_light_blue.png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>#70B19E</td><td><a href="../.gitbook/assets/Docs_colours_green_v2.png">Docs_colours_green_v2.png</a></td></tr><tr><td>#48685A</td><td><a href="../.gitbook/assets/Docs_colours_green_v3.png">Docs_colours_green_v3.png</a></td></tr><tr><td>#F9F9F9</td><td><a href="../.gitbook/assets/F9F9F9.png">F9F9F9.png</a></td></tr></tbody></table>
